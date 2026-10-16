@@ -28,5 +28,11 @@
         "topic": "Centralized Digital Ecosystem",
         "content": "I wanted a clean, lightning-fast way for recruiters, collaborators, and friends to find all my work in one place. 🌐✨\n\nSo, I built and deployed my own custom Flask bio hub! Now, whether someone wants to check out my GitHub repositories, read my professional updates on LinkedIn, or connect on social media, everything is centralized into a single master link.\n\nCheck out my journey and connect with me here: [Insert Your Live Render Link]\n\n#WebDev #Portfolio #Python #Flask #OpenSource",
         "status": "Ready"
+    },
+    {
+    "id": 5,
+    "topic": "Centralized Digital Ecosystem",
+    "content": "I wanted a clean, lightning-fast way for recruiters, collaborators, and friends to find all my work in one place. 🌐✨\n\nSo, I built and deployed my own custom Flask bio hub! Now, whether someone wants to check out my GitHub repositories, read my professional updates on LinkedIn, or connect on social media, everything is centralized into a single master link.\n\nCheck out my journey and connect with me here: https://antenyijoseph20.pythonanywhere.com\n\n#WebDev #Portfolio #Python #Flask #OpenSource",
+    "status": "Ready"
     }
 ]
