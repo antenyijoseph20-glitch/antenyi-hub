@@ -1,0 +1,18 @@
+<div class="links-list">
+    {% if links %}
+        {% for link in links %}
+        <a href="{{ link.url }}" class="link-card" target="_blank" rel="noopener noreferrer">
+            <i class="{{ link.get('icon', 'fas fa-link') }} link-icon"></i>
+            <div class="link-info">
+                <span class="platform-name">{{ link.get('platform', 'Link') }}</span>
+                <span class="platform-desc">{{ link.get('description', 'Click to visit profile') }}</span>
+            </div>
+            <i class="fas fa-arrow-right external-arrow"></i>
+        </a>
+        {% endfor %}
+    {% else %}
+        <div class="empty-state">
+            <p>No links available right now. Please check back shortly!</p>
+        </div>
+    {% endif %}
+</div>

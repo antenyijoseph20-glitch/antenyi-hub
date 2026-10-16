@@ -1,0 +1,50 @@
+[
+    {
+        "platform": "GitHub",
+        "url": "https://github.com/antenyijoseph20-glitch",
+        "icon": "fab fa-github",
+        "description": "Backend systems, CLI tools & Python/Go codebases"
+    },
+    {
+        "platform": "LinkedIn",
+        "url": "https://www.linkedin.com/in/antenyi-joseph-727a21181",
+        "icon": "fab fa-linkedin",
+        "description": "Professional network & career updates"
+    },
+    {
+        "platform": "X (Twitter)",
+        "url": "https://x.com/antenyijoseph",
+        "icon": "fab fa-x-twitter",
+        "description": "Tech thoughts, learning logs & updates"
+    },
+    {
+        "platform": "Antenyi Jnr Portfolio",
+        "url": "https://antenyijoseph20-glitch.github.io/portfolio/",
+        "icon": "fas fa-laptop-code",
+        "description": "Full-stack software engineering projects & showcase"
+    },
+    {
+        "platform": "Facebook",
+        "url": "https://www.facebook.com/antenyijoseph.ochohepo.7o",
+        "icon": "fab fa-facebook",
+        "description": "Connect with me on personal & community updates"
+    },
+    {
+        "platform": "Instagram",
+        "url": "https://www.instagram.com/antenyijoseph?vrfl=ZWdhNmszY3E2MG5s",
+        "icon": "fab fa-instagram",
+        "description": "Behind the scenes & daily tech journey"
+    },
+    {
+        "platform": "Alison Learning Profile",
+        "url": "https://alison.com/profile/57687275",
+        "icon": "fas fa-graduation-cap",
+        "description": "Certifications & continuous professional development"
+    },
+    {
+        "platform": "Get in Touch",
+        "url": "mailto:antenyijoseph@gmail.com",
+        "icon": "fas fa-envelope",
+        "description": "Direct professional inquiries & collaborations"
+    }
+]
