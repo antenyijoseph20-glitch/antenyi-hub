@@ -2,6 +2,7 @@ import json
 import logging
 import os
 from flask import Flask, render_template
+from publisher import process_queue
 
 logging.basicConfig(level=logging.INFO)
 logger = logging.getLogger("BioHub")
@@ -43,6 +44,11 @@ def index():
       title="Full-Stack Software Engineer & Backend Developer",
       links=links,
   )
+@app.route("/run-publisher-job")
+def run_publisher_job():
+    # You can add basic token protection here if you want security
+    process_queue()
+    return "Publisher executed successfully!" 
 
 
 if __name__ == "__main__":
