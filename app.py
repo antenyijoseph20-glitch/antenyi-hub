@@ -10,7 +10,7 @@ logger = logging.getLogger("BioHub")
 app = Flask(__name__)
 
 # Secret key for authorized access to the publishing job
-SECRET_KEY = os.environ.get("PUBLISHER_SECRET_KEY", "antenyi-secret-2026")
+SECRET_KEY = os.environ.get("PUBLISHER_SECRET_KEY", "d984ff845137af9e2d90b32748a43a46")
 
 
 def load_links():
