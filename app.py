@@ -1,7 +1,7 @@
 import json
 import logging
 import os
-from flask import Flask, render_template
+from flask import Flask, render_template, request, jsonify, abort
 from publisher import process_queue
 
 logging.basicConfig(level=logging.INFO)
@@ -46,10 +46,13 @@ def index():
   )
 @app.route("/run-publisher-job")
 def run_publisher_job():
-    # You can add basic token protection here if you want security
+    # Check if the secret key matches
+    user_key = request.args.get("key")
+    if user_key != SECRET_KEY:
+        return "Unauthorized access: Invalid secret key.", 403
+    
     process_queue()
-    return "Publisher executed successfully!" 
-
+    return "Publisher executed successfully!"
 
 if __name__ == "__main__":
-  app.run(debug=True, host="0.0.0.0", port=5000)
+    app.run(debug=True)
