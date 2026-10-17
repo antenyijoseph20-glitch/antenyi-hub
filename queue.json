@@ -1,38 +1,33 @@
 [
-    {
-        "id": 1,
-        "topic": "Backend Engineering Journey",
-        "content": "Moving from foundational programming to building real-world backend systems has been an incredible journey. 🚀 From writing Python string manipulation algorithms and Go CLI ticket management systems to deploying web servers—every line of code teaches me how systems actually talk to each other.\n\nWhat backend tech are you currently building with? Let's connect in the comments! 👇\n\n#SoftwareEngineering #Python #GoLang #BackendDevelopment #CodingJourney",
-        "status": "Ready"
-    },
-    {
-        "id": 2,
-        "topic": "Building with Python Flask",
-        "content": "Flask is such a powerful and flexible framework for Python developers. 💻✨ Recently, I built and deployed a web portal (like the Agatu LGA project showcase) featuring dynamic routing, executive profile galleries, and clean HTML/CSS templates.\n\nThe best part of Flask? Giving you full control over your architecture from database to UI without unnecessary bloat. Have you built anything with Flask lately?\n\n#Python #Flask #WebDevelopment #TechInNigeria #FullStack",
-        "status": "Ready"
-    },
-    {
-        "id": 3,
-        "topic": "Mastering Go and CLI Tools",
-        "content": "Concurrency, clean syntax, and blazing-fast execution—Go is an absolute joy to learn for backend tooling. ⚙️ From handling custom ASCII art generation algorithms (generate.go) to parsing command-line interfaces, Go forces you to think deeply about system design and efficiency.\n\nWho else is currently exploring Go for their backend projects?\n\n#GoLang #CLI #SoftwareDeveloper #Backend #CodeNewbie",
-        "status": "Ready"
-    },
-    {
-        "id": 4,
-        "topic": "Consistency & Busy Developer Life",
-        "content": "Balancing a civil service career, farming, family, and learning full-stack software engineering means free time is rare. ⏱️\n\nThe secret I've learned? Consistency over intensity. Even if it's just 30 minutes a day writing Python scripts, debugging Go handlers, or planning database schemas—small daily compounding leads to massive progress over time.\n\nHow do you stay consistent when life gets busy?\n\n#Productivity #DeveloperJourney #TechLife #GrowthMindset",
-        "status": "Ready"
-    },
-    {
-        "id": 5,
-        "topic": "Centralized Digital Ecosystem",
-        "content": "I wanted a clean, lightning-fast way for recruiters, collaborators, and friends to find all my work in one place. 🌐✨\n\nSo, I built and deployed my own custom Flask bio hub! Now, whether someone wants to check out my GitHub repositories, read my professional updates on LinkedIn, or connect on social media, everything is centralized into a single master link.\n\nCheck out my journey and connect with me here: [Insert Your Live Render Link]\n\n#WebDev #Portfolio #Python #Flask #OpenSource",
-        "status": "Ready"
-    },
-    {
+  {
+    "id": 1,
+    "topic": "Backend Engineering Journey",
+    "content": "Moving from foundational programming to building real-world backend systems has been an incredible journey. \ud83d\ude80 From writing Python string manipulation algorithms and Go CLI ticket management systems to deploying web servers\u2014every line of code teaches me how systems actually talk to each other.\n\nWhat backend tech are you currently building with? Let's connect in the comments! \ud83d\udc47\n\n#SoftwareEngineering #Python #GoLang #BackendDevelopment #CodingJourney",
+    "status": "Published",
+    "published_at": "2026-10-17 15:26:31"
+  },
+  {
+    "id": 2,
+    "topic": "Building with Python Flask",
+    "content": "Flask is such a powerful and flexible framework for Python developers. \ud83d\udcbb\u2728 Recently, I built and deployed a web portal (like the Agatu LGA project showcase) featuring dynamic routing, executive profile galleries, and clean HTML/CSS templates.\n\nThe best part of Flask? Giving you full control over your architecture from database to UI without unnecessary bloat. Have you built anything with Flask lately?\n\n#Python #Flask #WebDevelopment #TechInNigeria #FullStack",
+    "status": "Ready"
+  },
+  {
+    "id": 3,
+    "topic": "Mastering Go and CLI Tools",
+    "content": "Concurrency, clean syntax, and blazing-fast execution\u2014Go is an absolute joy to learn for backend tooling. \u2699\ufe0f From handling custom ASCII art generation algorithms (generate.go) to parsing command-line interfaces, Go forces you to think deeply about system design and efficiency.\n\nWho else is currently exploring Go for their backend projects?\n\n#GoLang #CLI #SoftwareDeveloper #Backend #CodeNewbie",
+    "status": "Ready"
+  },
+  {
+    "id": 4,
+    "topic": "Consistency & Busy Developer Life",
+    "content": "Balancing a civil service career, farming, family, and learning full-stack software engineering means free time is rare. \u23f1\ufe0f\n\nThe secret I've learned? Consistency over intensity. Even if it's just 30 minutes a day writing Python scripts, debugging Go handlers, or planning database schemas\u2014small daily compounding leads to massive progress over time.\n\nHow do you stay consistent when life gets busy?\n\n#Productivity #DeveloperJourney #TechLife #GrowthMindset",
+    "status": "Ready"
+  },
+  {
     "id": 5,
     "topic": "Centralized Digital Ecosystem",
-    "content": "I wanted a clean, lightning-fast way for recruiters, collaborators, and friends to find all my work in one place. 🌐✨\n\nSo, I built and deployed my own custom Flask bio hub! Now, whether someone wants to check out my GitHub repositories, read my professional updates on LinkedIn, or connect on social media, everything is centralized into a single master link.\n\nCheck out my journey and connect with me here: https://antenyijoseph20.pythonanywhere.com\n\n#WebDev #Portfolio #Python #Flask #OpenSource",
+    "content": "I wanted a clean, lightning-fast way for recruiters, collaborators, and friends to find all my work in one place. \ud83c\udf10\u2728\n\nSo, I built and deployed my own custom Flask bio hub! Now, whether someone wants to check out my GitHub repositories, read my professional updates on LinkedIn, or connect on social media, everything is centralized into a single master link.\n\nCheck out my journey and connect with me here: https://antenyijoseph20.pythonanywhere.com\n\n#WebDev #Portfolio #Python #Flask #OpenSource",
     "status": "Ready"
-    }
+  }
 ]
