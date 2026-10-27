@@ -1,38 +1,50 @@
-import json
-from datetime import datetime
 
-QUEUE_FILE = "queue.json"
+import json
+import logging
+from pathlib import Path
+
+QUEUE_FILE = Path(__file__).resolve().parent / "queue.json"
+
+logging.basicConfig(level=logging.INFO)
+logger = logging.getLogger("BioHub.Publisher")
+
 
 def process_queue():
+    """Preview the next ready post without marking it as published."""
+    queue_path = Path(QUEUE_FILE)
+
     try:
-        with open(QUEUE_FILE, "r") as f:
-            queue = json.load(f)
-    except (FileNotFoundError, json.JSONDecodeError) as e:
-        print(f"Error reading {QUEUE_FILE}: {e}")
+        with queue_path.open("r", encoding="utf-8") as file:
+            queue = json.load(file)
+    except (FileNotFoundError, json.JSONDecodeError, OSError) as error:
+        logger.error("Unable to read %s: %s", queue_path, error)
         return
 
-    published_count = 0
-    for item in queue:
-        # Publish the first "Ready" item found
-        if item.get("status") == "Ready":
-            print("=" * 50)
-            print(f"🚀 PUBLISHING POST #{item['id']}: {item['topic']}")
-            print("=" * 50)
-            print(item['content'])
-            print("=" * 50)
-            
-            # Update status
-            item["status"] = "Published"
-            item["published_at"] = datetime.now().strftime("%Y-%m-%d %H:%M:%S")
-            published_count += 1
-            break  # Publish one post per execution
+    if not isinstance(queue, list):
+        logger.error("The queue must contain a JSON list.")
+        return
 
-    if published_count > 0:
-        with open(QUEUE_FILE, "w") as f:
-            json.dump(queue, f, indent=2)
-        print("\n✅ queue.json updated successfully!")
-    else:
-        print("ℹ️ No pending posts with status 'Ready' found.")
+    for item in queue:
+        if not isinstance(item, dict):
+            continue
+
+        if item.get("status") == "Ready":
+            logger.info(
+                "Previewing post #%s: %s",
+                item.get("id", "unknown"),
+                item.get("topic", "Untitled"),
+            )
+            print("=" * 50)
+            print(item.get("content", ""))
+            print("=" * 50)
+            logger.info(
+                "Preview only: no social platform integration is configured. "
+                "The post remains Ready."
+            )
+            return
+
+    logger.info("No pending posts with status 'Ready' found.")
+
 
 if __name__ == "__main__":
     process_queue()
